@@ -1,0 +1,50 @@
+Python Developer Roadmap
+# https://www.youtube.com/watch?v=ikHt4iGSKrs
+
+1. Basics
+    variables
+    Data types
+    Control structures(conditins, loops)
+    Functions
+    Modules
+    
+2. Data structure
+    List
+    Tuples
+    Dictionaries
+    Sets
+    Strings
+
+3. File handling
+    Read and Write files
+    
+4. OOPs
+    Class
+    Objects
+    Inheritance
+    Encapuslation
+    Polymorphism
+    
+5. Error handling
+    Exception handling
+    
+6.  Advanced Data structures
+    Collections Module
+    List comprehension
+    Generators
+    Iterators
+    
+7. Functional Programming
+    Lambda
+    Map
+    Filter
+    Reduce
+    
+8. Working with API
+    Requests library
+    JSON data
+    
+9. Connecting database
+    Basics of sql
+    Connectivity with python
+    
