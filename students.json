@@ -1,0 +1,82 @@
+{
+  "101": {
+    "name": "Rahul",
+    "city": "Delhi",
+    "age": 20,
+    "gender": "Male",
+    "marks": 78,
+    "result": "Pass"
+  },
+  "102": {
+    "name": "Priya",
+    "city": "Mumbai",
+    "age": 21,
+    "gender": "Female",
+    "marks": 54,
+    "result": "Fail"
+  },
+  "103": {
+    "name": "Arjun",
+    "city": "Bangalore",
+    "age": 22,
+    "gender": "Male",
+    "marks": 89,
+    "result": "Pass"
+  },
+  "104": {
+    "name": "Neha",
+    "city": "Kolkata",
+    "age": 20,
+    "gender": "Female",
+    "marks": 66,
+    "result": "Pass"
+  },
+  "105": {
+    "name": "Vikram",
+    "city": "Hyderabad",
+    "age": 23,
+    "gender": "Male",
+    "marks": 40,
+    "result": "Fail"
+  },
+  "106": {
+    "name": "Anjali",
+    "city": "Hyderabad",
+    "age": 21,
+    "gender": "Female",
+    "marks": 92,
+    "result": "Pass"
+  },
+  "107": {
+    "name": "Suresh",
+    "city": "Chennai",
+    "age": 22,
+    "gender": "Male",
+    "marks": 55,
+    "result": "Fail"
+  },
+  "108": {
+    "name": "Meera",
+    "city": "Jaipur",
+    "age": 20,
+    "gender": "Female",
+    "marks": 81,
+    "result": "Pass"
+  },
+  "109": {
+    "name": "Ravi",
+    "city": "Lucknow",
+    "age": 24,
+    "gender": "Male",
+    "marks": 47,
+    "result": "Fail"
+  },
+  "110": {
+    "name": "Kiran",
+    "city": "Ahmedabad",
+    "age": 23,
+    "gender": "Female",
+    "marks": 73,
+    "result": "Pass"
+  }
+}

@@ -1,0 +1,19 @@
+Create a virtual environment: 
+    1. python -m venv myenv (Python module in myenv)
+    2. conda create -p myenv python==3.12 -y(Create it in the current folder with the name myenv)
+Activate the environment: myenv\Scripts\activate
+
+Now we can install our requirements like python, numpy, pandas versions etc
+
+Check the python version: python --version(3.12.0)
+
+Created a requirements.txt file
+
+Install the required packages: pip install fastapi uvicorn pydantic
+
+### FastAPI 
+A simple hello word app in 'main.py' file
+To run this:- uvicorn main(filename):app(object) --reload
+
+Click on the 'http://..', you will got to the Home page
+if we add '/docs' at the end of that we can see the document
