@@ -14,9 +14,11 @@ Steps:
 
 from fastapi import FastAPI, Path, Query, HTTPException
 from fastapi.responses import JSONResponse
-from pydantic import BaseModel, Field, computed_field
+from pydantic import BaseModel, Field, computed_field, field_validator
 from typing import Annotated, Literal 
 import json 
+
+
 
 app=FastAPI()
 class Student(BaseModel):
@@ -24,10 +26,16 @@ class Student(BaseModel):
     name:Annotated[str, Field(..., title="Student name(between 3 and 25 characters)", example="John", min_length=3, max_length=25)]
     city: Annotated[str, Field(title="City of the student must be 20 characters", max_length=30)]
     age: Annotated[int, Field(title="Student age(must be between 10 and 25)", ge=10, le=25)]
-    gender: Annotated[Literal['male', 'female', 'others'], Field(..., title="Gender of the student(Male, Female, Others)")]
+    gender: Annotated[Literal['Male', 'Female', 'Others'], Field(..., title="Gender of the student(Male, Female, Others)")]
     marks: Annotated[int, Field(..., title="Marks of the tudent(must be between 0 and 100)", gt=0, le=100)]
     
-    # Assign Grade based on marks
+    # Clean the gender field before giving as the input
+    @field_validator('gender', mode='before')
+    @classmethod
+    def normalize_gender(cls, val, mode='before'):
+        return val.title()
+
+    # Assign Grade and Result based on marks
     @computed_field
     def grade(self)->str:
         if self.marks>85:
